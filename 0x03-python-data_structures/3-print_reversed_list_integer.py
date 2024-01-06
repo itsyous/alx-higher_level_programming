@@ -5,4 +5,4 @@ def print_reversed_list_integer(my_list=[]):
         if i == (-1):
             break
         print("{:d}".format(my_list[i]))
-        i -= 1
+        i = i - 1
