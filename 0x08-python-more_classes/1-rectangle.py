@@ -25,7 +25,7 @@ class Rectangle:
             raise ValueError("width must be >= 0")
         self.__width = value
 
-    @property    
+    @property
     def height(self):
         """get the private instance attribute"""
         return self.__height
@@ -38,4 +38,3 @@ class Rectangle:
         elif value < 0:
             raise ValueError("height must be >= 0")
         self.__height = value
-
