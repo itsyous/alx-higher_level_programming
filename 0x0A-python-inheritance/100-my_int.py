@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-"""contains class Myint"""
+"""
+contains class Myint
+"""
 
 
 class Myint(int):
