@@ -4,7 +4,7 @@ contains class Myint
 """
 
 
-class Myint(int):
+class MyInt(int):
     """rebel version of an integer"""
     def __new__(cls, *args, **kwargs):
         """create an instance of class"""
