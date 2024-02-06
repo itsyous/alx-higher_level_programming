@@ -14,4 +14,4 @@ except Exception:
     old_data = []
 
 old_data.extend(arglist)
-save_to_json_file(old_data, 'add_item.jso,')
+save_to_json_file(old_data, 'add_item.json')
