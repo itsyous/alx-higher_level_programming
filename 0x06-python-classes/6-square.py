@@ -9,7 +9,7 @@ class Square:
         """initialize a square
 
         Args:
-        size: the lenght of a side of square
+        size: the size of a new square
         position: the position of the new square
         """
         self.size = size
