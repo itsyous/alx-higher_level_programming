@@ -46,3 +46,9 @@ Error 3: passing wrong types as first_name and last_nmae
     >>> say_my_name("Youssef", -15)
     Traceback (most recent call last):
     TypeError: last_name must be a string
+
+Error 4: passing more than 2 arguments:
+
+    >>> say_my_name("Youssef", "Jack", "Marco")
+    Traceback (most recent call last):
+    TypeError: say_my_name() takes from 1 to 2 arguments but ...
