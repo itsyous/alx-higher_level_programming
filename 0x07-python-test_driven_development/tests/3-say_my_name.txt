@@ -1,0 +1,48 @@
+The ``say_my_name.txt`` module
+=====================
+
+Using ``say_my_name.txt``
+-------------------
+
+Importing the function say_my_name
+    >>> say_my_name = __import__('3-say_my_name').say_my_name
+
+Here are some examples on how to use this function correctly:
+
+Example 1: passing the first and last name
+
+    >>> say_my_name("Jack", "SPARROW")
+    My name is Jack SPARROW
+
+    >>> say_my_name("Youssef")
+    My name is Youssef
+
+Example 2: passing only the first name
+
+    >>> say_my_name("Youssef", None)
+    Traceback (most recent call last):
+    TypeError: last_name must be a string
+
+please note that there are some error cases that you should be aware of:
+
+Error 1: passing None as the last name:
+
+    >>> say_my_name(None, None)
+    Traceback (most recent call last):
+    TypeError: first_name must be a string
+
+Error 2: passing None as the first and the last name:
+
+    >>> say_my_name(None, "Jack")
+    Traceback (most recent call last):
+    TypeError: first_name must be a string
+
+Error 3: passing wrong types as first_name and last_nmae
+
+    >>> say_my_name(15.9, "jack")
+    Traceback (most recent call last):
+    TypeError: first_name must be a string
+
+    >>> say_my_name("Youssef", -15)
+    Traceback (most recent call last):
+    TypeError: last_name must be a string
