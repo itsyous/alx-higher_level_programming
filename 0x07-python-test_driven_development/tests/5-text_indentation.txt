@@ -53,3 +53,8 @@ Example 9:if no arguments are passed it will raise a TypeError
     >>> text_indentation()
     Traceback (most recent call last):
     TypeError: text_indentation() missing 1 required positional argument: 'text'
+
+Example 10:passing more than one argument will raise a TypeError
+    >>> text_indentation("Hello", "World")
+    Traceback (most recent call last):
+    TypeError: text_indentation() takes 1 positional argument but ...
