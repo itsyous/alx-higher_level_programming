@@ -1,0 +1,55 @@
+The ``5-text_indentation`` module
+================================
+
+This is an example on how to use the "5-text_indentation.py" module
+
+The text_indentation() function prints a text with two new lines
+after each of the following characters: '.', ':' and '?'
+
+Importing the function text_indendation.
+    >>> text_indentation = __import__('5-text_indentation').text_indentation
+
+Example 1:passing the given text
+    >>> text_indentation("""consectetur adipiscing elit. Quonam modo?""")
+    consectetur adipiscing elit.
+    <BLANKLINE>
+    Quonam modo?
+    <BLANKLINE>
+
+Example 2:passing an empty string
+    >>> text_indentation("")
+
+Example 3:passing text with a space at the beginning
+    >>> text_indentation("    Hello")
+    Hello
+
+Example 4:passing a word with spaces around it
+    >>> text_indentation("   Python is awesome   .")
+    Python is awesome.
+    <BLANKLINE>
+
+Example 5:passing a word with spaces around it with a special character
+    >>> text_indentation("   Python is awesome   ")
+    Python is awesome
+
+Example 6:passing a text with spaces between words and special character
+    >>> text_indentation("who are you? what's your name?")
+    who are you?
+    <BLANKLINE>
+    what's your name?
+    <BLANKLINE>
+
+Example 7:passing a non-string as argument will raise a TypeError
+    >>> text_indentation(98)
+    Traceback (most recent call last):
+    TypeError: text must be a string
+
+Example 8:passing a none as argument will raise a TypeError
+    >>> text_indentation(None)
+    Traceback (most recent call last):
+    TypeError: text must be a string
+
+Example 9:if no arguments are passed it will raise a TypeError
+    >>> text_indentation()
+    Traceback (most recent call last):
+    TypeError: text_indentation() missing 1 required positional argument: 'text'
