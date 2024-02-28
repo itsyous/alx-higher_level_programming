@@ -30,5 +30,5 @@ class Student:
         Args:
          json (dict): the key/value pairs to replace attributes with
         """
-         for j, i in json.items():
-             setattr(self, j, i)
+         for i, j in json.items():
+             setattr(self, i, j)
