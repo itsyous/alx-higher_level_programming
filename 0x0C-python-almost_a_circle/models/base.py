@@ -3,10 +3,20 @@
 
 
 class Base:
-    """Initialize a class"""
-    Base.__nb_objects = 0
+    """Represent a class
+
+    Private class attribute:
+     __nb_objects: Number of instantiated Base
+    """
+    __nb_objects = 0
     def __init__(self, id=None):
-        """constructor"""
+        """Initialize a class
+
+        Args:
+         id (int): the id of the new Base
+        """
         if self.id is not None:
             self.id = id
-        Base.__nb_objects += 1
+        else:
+            Base.__nb_objects += 1
+            self.id = Base.__nb_objects
