@@ -9,3 +9,4 @@ class Base:
         """constructor"""
         if self.id is not None:
             self.id = id
+        Base.__nb_objects += 1
