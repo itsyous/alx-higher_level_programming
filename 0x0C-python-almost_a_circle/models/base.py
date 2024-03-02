@@ -9,6 +9,7 @@ class Base:
      __nb_objects: Number of instantiated Base
     """
     __nb_objects = 0
+
     def __init__(self, id=None):
         """Initialize a class
 
