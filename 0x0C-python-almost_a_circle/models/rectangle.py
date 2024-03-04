@@ -74,7 +74,7 @@ class Rectangle(Base):
         """display the rectangle"""
         if self.width == 0 or self.height == 0:
             print("")
-        for i in range(0, len(self.width)):
-            for j in range(0, len(self.height)):
+        for i in range(0, self.width):
+            for j in range(0, self.height):
                 print("#", end="")
             print("")
