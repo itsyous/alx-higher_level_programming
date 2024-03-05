@@ -78,7 +78,7 @@ class Rectangle(Base):
         for k in range(0, self.height):
             for l in range(0, self.x):
                 print(" ")
-            for k in range(0, self.width):
+            for j in range(0, self.width):
                 print("#", end="")
             print("")
 
