@@ -76,11 +76,11 @@ class Rectangle(Base):
             print("")
 
         for k in range(0, self.height):
-            for l in range(self.x, self.width):
-                for j in range(0, self.x):
-                    print(" ", end='')
-                print("#",end="")
-            print(" ")
+            for l in range(0, self.x):
+                for j in range(0, self.width):
+                    print("#", end='')
+                print(" ")
+            print("")
 
     def __str__(self):
         return "[Rectangle] ({}) {}/{} - {}/{}".format(self.id, self.x,
