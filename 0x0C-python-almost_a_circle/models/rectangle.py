@@ -74,8 +74,8 @@ class Rectangle(Base):
         """display the rectangle"""
         for i in range(0, self.height):
             for j in range(0, self.width):
-                for k in range(0, x):
-                    for l in range(0, y):
+                for k in range(0, self.x):
+                    for l in range(0, self.y):
                         print(" ")
                     print("")
                 print("#", end="")
