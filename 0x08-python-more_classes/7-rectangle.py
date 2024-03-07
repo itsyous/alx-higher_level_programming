@@ -60,12 +60,8 @@ class Rectangle:
         if self.__width == 0 or self.__height == 0:
             return ("")
 
-        result = []
-        for i in range(self.__height):
-            [result.append(str(self.print_symbol)) for j in range(self.__width)]
-            if i != self.__height - 1:
-                result.append("\n")
-        return ("".join(result))
+        return '\n'.join(self.print_symbol * self.__width
+                         for i in range(0, self.__height))
 
     def __repr__(self):
         """return a string of rectangle"""
