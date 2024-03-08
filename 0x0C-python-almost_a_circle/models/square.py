@@ -5,6 +5,7 @@ from models.rectangle import Rectangle
 
 class Square(Rectangle):
     """represent a class"""
+
     def __init__(self, size, x=0, y=0, id=None):
         """Initialize a class
 
@@ -14,5 +15,9 @@ class Square(Rectangle):
          y: the y coordinate of the square
          id (int): the id if the square
          """
-         super().__init__(size, size, x, y, id)
+         super().__init__(id, x, y, size, size)
 
+    def __str__(self):
+        return "[Square] ({}) {}/{} - {}/{} - {}".format(self.id,
+                                                  self.x, self.y
+                                                  self.size)
