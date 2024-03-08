@@ -15,7 +15,7 @@ class Square(Rectangle):
          y: the y coordinate of the square
          id (int): the id if the square
          """
-         super().__init__(id, x, y, size, size)
+    super().__init__(id, x, y, size, size)
 
     def __str__(self):
         return "[Square] ({}) {}/{} - {}/{} - {}".format(self.id,
