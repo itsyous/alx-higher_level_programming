@@ -17,8 +17,8 @@ class Square(Rectangle):
 
     @setter.size
     def size(self, value):
-        self.size = value
-        self.size = value
+        self.width = value
+        self.height = value
 
     def __str__(self):
         """represent a square"""
