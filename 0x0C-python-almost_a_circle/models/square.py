@@ -12,7 +12,6 @@ class Square(Rectangle):
         super().__init__(size, size, x, y, id)
 
     @property
-    """get the size of the square"""
     def size(self):
         return self.width
 
