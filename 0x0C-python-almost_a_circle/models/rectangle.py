@@ -82,7 +82,7 @@ class Rectangle(Base):
                 print("#", end="")
             print("")
 
-    def update(self, *args):
+    def update(self, *args, **kwargs):
         """assign an argument to each attribute"""
         x = 0
         for arg in args:
@@ -97,6 +97,11 @@ class Rectangle(Base):
             elif x == 4:
                 self.y = arg
             x += 1
+
+        if kwargss is not None:
+            for key, value in kwargs.items():
+                print("{}: {}".format(key, value))
+
 
     def __str__(self):
         return "[Rectangle] ({}) {}/{} - {}/{}".format(self.id, self.x,
