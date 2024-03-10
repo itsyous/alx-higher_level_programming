@@ -98,7 +98,7 @@ class Rectangle(Base):
                 self.y = arg
             x += 1
 
-        if kwargss is not None:
+        if kwargs is not None:
             for key, value in kwargs.items():
                 if key == "id":
                     self.id = value
