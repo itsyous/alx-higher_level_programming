@@ -100,7 +100,17 @@ class Rectangle(Base):
 
         if kwargss is not None:
             for key, value in kwargs.items():
-                print("{}: {}".format(key, value))
+                if key == "id":
+                    self.id = value
+                elif key == "width":
+                    self.width = value
+                elif key == "height":
+                    self.height = height
+                elif key == "x":
+                    self.x = value
+                elif key == "y":
+                    self.y = value
+
 
 
     def __str__(self):
