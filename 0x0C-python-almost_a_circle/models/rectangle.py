@@ -98,21 +98,21 @@ class Rectangle(Base):
                 self.y = arg
             x += 1
 
-        for key, value in kwargs.items():
-            if key == "id":
-                if value is None:
-                    self.__init__(self.width, self.height, self.x, self.y)
-                else:
-                    self.id = value
-            elif key == "width":
-                self.width = value
-            elif key == "height":
-                self.height = height
-            elif key == "x":
-                self.x = value
-            elif key == "y":
-                self.y = value
-
+        if kwargs != 0:
+            for key, value in kwargs.items():
+                if key == "id":
+                    if value is None:
+                        self.__init__(self.width, self.height, self.x, self.y)
+                    else:
+                        self.id = value
+                elif key == "width":
+                    self.width = value
+                elif key == "height":
+                    self.height = height
+                elif key == "x":
+                    self.x = value
+                elif key == "y":
+                    self.y = value
 
     def __str__(self):
         return "[Rectangle] ({}) {}/{} - {}/{}".format(self.id, self.x,
