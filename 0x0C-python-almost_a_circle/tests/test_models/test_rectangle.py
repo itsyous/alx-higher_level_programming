@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 """defines a test for Rectangle"""
 
+import sys
+import io
 import unittest
 from models.base import Base
 from models.rectangle import Rectangle
@@ -33,3 +35,19 @@ class TestRectangle_method(unittest.TestCase):
         rec1 = Rectangle(8, 9, 10, 88)
         rec2 = Rectangle(20, 35, 97, 33)
         self.asserEqual(rec1.id, rec2.id - 1)
+
+    def test_width_private(self):
+        with self.assertRaises(AttributeError):
+            print(Rectangle(8, 8, 0, 0, 5).__width)
+
+    def test_height_private(self):
+        with self.assertRaises(AttributeError):
+            print(Rectangle(8, 8, 0, 0, 5).__height)
+
+    def test_x_private(self):
+        with self.assertRaises(AttributeError):
+            print(Rectangle(8, 8, 0, 0, 5).__x)
+
+    def test_y_private(self):
+        with self.assertRaises(AttributeError):
+            print(Rectangle(8, 8, 0, 0, 5).__y)
