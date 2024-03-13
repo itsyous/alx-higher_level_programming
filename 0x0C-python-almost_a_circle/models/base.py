@@ -30,8 +30,10 @@ class Base:
         else:
             return json.dumps(list_dictionaries)
 
-    @classmethod
-    def save_to_file(cls, list_objs):
-        json_string = json.dumps(list_dictionaries)
-        with open("Base.json", "w", encoding="utf8") as f:
-            f.write(json_string)
+    @staticmethod
+    def from_json_string(json_string):
+        """convert from json string to dictionary"""
+        if json_string is None:
+            return "[]"
+        else:
+            return json.loads(json_string)
