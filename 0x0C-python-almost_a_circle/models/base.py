@@ -37,13 +37,3 @@ class Base:
             return []
         else:
             return json.loads(json_string)
-
-    @staticmethod
-    def create(cls, **dictionary):
-        dummy_instance = cls(0, 0)
-        dummy_instance.update(**dictionaey)
-        return dummy_instance
-
-    def update(self, *args, **kwargs):
-        for key, value in kwargs.items():
-            setattr(self, key, value)
